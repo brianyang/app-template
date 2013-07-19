@@ -58,7 +58,7 @@
                 } else if (/^\</.test(e)) {
                     var t = this.getTag(e);
 
-                    // State for 
+                    // State for
                     var stateAttribute = t[1][0] && t[1][0][0];
                     var state = data[stateAttribute];
 
@@ -108,7 +108,7 @@
 
                         if (!this.ifBlocksContainsFalse(ifBlocks)) {
                             out.push(e);
-                        }   
+                        }
                     }
 
 
@@ -129,9 +129,9 @@
                     if (!this.ifBlocksContainsFalse(ifBlocks)) {
                         out.push(e);
                     }
-                }                
+                }
             }
-            
+
             return out.join("");
         },
 
@@ -140,7 +140,7 @@
             for (var j = 0, jl = ifBlocks.length; j < jl; j++) {
                 if (!ifBlocks[j].currentState) {
                     res = true;
-                }                            
+                }
             }
 
             return res;

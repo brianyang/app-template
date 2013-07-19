@@ -9,13 +9,15 @@ booktorious.spineEntry = {
     renderIframe: function (target) {
         var self = this;
 
-        target.append(this.iframe);
+        // target.append(this.iframe);
 
-        this.iframe.contentDocument.open();
+        // this.iframe.contentDocument.open();
         var html = new XMLSerializer().serializeToString(this.doc);
-        this.iframe.contentDocument.write(html);
-        this.contentResizeIframe();
-        this.iframe.contentDocument.close();
+        console.log(html)
+        $('#wrapper').append(html)
+        // this.iframe.contentDocument.write(html);
+        // this.contentResizeIframe();
+        // this.iframe.contentDocument.close();
 
         sarge(this.iframe.contentDocument).find("img").event("load", function () {
             self.contentResizeIframe();

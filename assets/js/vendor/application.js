@@ -11,7 +11,7 @@ sarge(window).event("load", function () {
             var reader = new FileReader();
             reader.onloadend = function () {
                 showLoading(reader.result);
-            };            
+            };
             reader.onerror = function (event) {
                 alert("An error occurred while reading the file. Error code: " + event.target.error.code);
             };
@@ -20,7 +20,7 @@ sarge(window).event("load", function () {
             alert("No file chosen.");
         }
     };
-    
+
     booktorious.loadTemplate("choose_file", {
         inputFileReadSupported: fileReaderSupported
     });
