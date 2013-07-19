@@ -51,5 +51,45 @@
 -bin/
   |__devserver (Shell script for firing up node-dev)
 --server.js
+
+
+
+├── Gruntfile.coffee
+├── Procfile
+├── README.md
+├── app
+│   ├── controllers
+│   ├── helpers
+│   ├── models
+│   └── views
+├── assets
+│   ├── css
+│   ├── img
+│   └── js
+├── bin
+│   └── devserver (Shell script for firing up node-dev)
+├── config
+│   ├── environment.coffee
+│   ├── express.coffee
+│   ├── middlewares
+│   ├── passport.coffee
+│   ├── routes.coffee
+│   └── routes.js
+├── epub-reader
+│   ├── Gruntfile.js
+│   ├── app
+│   ├── bower.json
+│   ├── dist
+│   ├── node_modules
+│   ├── package.json
+│   └── test
+├── package.json
+├── server.js
+└── ui
+    ├── Gruntfile.js
+        ├── app
+
+
+
 ```
 
