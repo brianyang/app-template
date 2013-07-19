@@ -33,30 +33,6 @@
 
 ## File structure
 ```
--app/
-  |--controllers/
-  |--models/
-  |--views/
-  |__helpers/ (template helper functions)
--config/
-  |--routes.coffee
-  |--environment.coffee
-  |--passport.coffee (auth config)
-  |--express.coffee (express.js config)
-  |--middlewares/ (custom middlewares)
--assets/ (Client side assets)
-  |--css/ (supports LESS)
-  |--js/ (supports Coffescript)
-  |--img/
--bin/
-  |__devserver (Shell script for firing up node-dev)
---server.js
-
-
-
-├── Gruntfile.coffee
-├── Procfile
-├── README.md
 ├── app
 │   ├── controllers
 │   ├── helpers
@@ -76,18 +52,10 @@
 │   ├── routes.coffee
 │   └── routes.js
 ├── epub-reader
-│   ├── Gruntfile.js
 │   ├── app
-│   ├── bower.json
-│   ├── dist
-│   ├── node_modules
-│   ├── package.json
-│   └── test
-├── package.json
-├── server.js
 └── ui
-    ├── Gruntfile.js
-        ├── app
+│   ├── app
+├── server.js
 
 
 
