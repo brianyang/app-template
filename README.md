@@ -6,7 +6,7 @@
 
 * implement some form of OAuth
 
-## details
+## server details
 
 - Object modeling for MongoDB using [Mongoose](http://mongoosejs.com/).
 - [Passport.js](http://passportjs.org/) for user authentication.
@@ -16,6 +16,19 @@
 - [connect-mongo](https://github.com/kcbanner/connect-mongo) for persistent session storage.
 - Coffeescript linting using [Grunt](http://gruntjs.com/).
 - [node-dev](https://github.com/fgnass/node-dev), an awesome development tool for Node.js that automatically restarts your node process when a script is modified. It also has useful growl notifications:
+
+## client details
+
+- Grunt to generate builds
+- Require for AMD script loading
+- CoffeeScript for easy development
+- bower for dependency management
+
+
+## html5 epub details
+
+- reads epub and renders html
+
 
 
 ## File structure
