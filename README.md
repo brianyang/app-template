@@ -1,4 +1,5 @@
-# Node base with Express, Mongoose, and CoffeeScript
+# express, mongoose, coffee: structure
+
 
 ## skeleton with methods
 - returning json
