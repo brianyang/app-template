@@ -1,7 +1,6 @@
 
 /**
- * Form5 Node.js Express Skeleton
- * Based on https://github.com/madhums/nodejs-express-mongoose-demo
+ * server app-template - node mongoose
  */
 
 var express = require('express'),
@@ -15,7 +14,7 @@ var express = require('express'),
 var env = process.env.NODE_ENV || 'development',
     config = require('./config/environment')[env],
     auth = require('./config/middlewares/authorization')
-    
+
 // Bootstrap database
 console.log('Connecting to database at ' + config.db)
 mongoose.connect(config.db)

@@ -1,10 +1,10 @@
 extends base
 
 block title
-  | Manage articles
+  | Manage books
 
 block main
-  h2 Manage articles
+  h2 Manage books
 
   if message != ''
     .alert.alert-notice
@@ -23,5 +23,5 @@ block main
         td= dateShortMon(article.createdAt)
         td
           a(href='/articles/#{article.id}/edit') edit
-          |  | 
+          |  |
           a(href='/articles/#{article.id}/destroy', onclick='return confirm("Are you sure you want to delete article #{article.title}?") ? true : false') delete

@@ -86,6 +86,14 @@ exports.index = function(req, res) {
   });
 };
 
+exports["import"] = function(req, res) {
+  Article.list(function(err, articles) {
+    return res.render('articles/import', {
+      articles: articles
+    });
+  });
+};
+
 exports.article = function(req, res, next, id) {
   Article.findById(id).exec(function(err, article) {
     if (err) {

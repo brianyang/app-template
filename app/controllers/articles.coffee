@@ -83,6 +83,12 @@ exports.index = (req, res) ->
       articles: articles
   return
 
+exports.import = (req, res) ->
+  Article.list (err, articles) ->
+    res.render 'articles/import',
+      articles: articles
+  return
+
 #
 # Find article by ID
 #

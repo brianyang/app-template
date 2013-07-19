@@ -1,12 +1,12 @@
 extends ../layout
 
 block title
-  | List articles
+  | import book
 
 block content
-  
+
   each article in articles
-  
+
     .container
       .row
         .span12
@@ -14,12 +14,12 @@ block content
       .row
         .span2
           small
-            p 
+            p
               b Published
               br
               != dateShortMon(article.createdAt)
-          
-            p 
+
+            p
               b Posted in
               br
               | #{article.tags}
