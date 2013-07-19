@@ -14,9 +14,12 @@ module.exports = (app, passport, auth) ->
 
   app.get '/logout', users.logout
 
-  app.get '/users', auth.requiresLogin, users.index
-  app.get '/users/new', auth.requiresLogin, users.new
-  app.post '/users', auth.requiresLogin, users.create
+  # app.get '/users', auth.requiresLogin, users.index
+  app.get '/users', users.index
+  # app.get '/users/new', auth.requiresLogin, users.new
+  app.get '/users/new', users.new
+  # app.post '/users', auth.requiresLogin, users.create
+  app.post '/users', users.create
   app.get '/users/:userId/edit', auth.requiresLogin, users.edit
   app.put '/users/:userId', auth.requiresLogin, users.update
   app.get '/users/:userId/destroy', auth.requiresLogin, users.destroy
