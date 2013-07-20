@@ -9,8 +9,15 @@ module.exports = (grunt) ->
       combine:
         files:
           'assets/css/main.min.css': [
-            'assets/css/vendor/bootstrap.css'
-            'assets/css/vendor/bootstrap-responsive.css'
+            # 'assets/css/vendor/bootstrap.css'
+            # 'assets/css/vendor/bootstrap-responsive.css'
+            # 'assets/css/vendor/bootstrap.min-slate.css'
+            # 'assets/css/vendor/bootstrap-responsive.min-slate.css'
+            # 'assets/css/vendor/bootswatch-slate.css'
+            'assets/css/vendor/bootstrap.readable.min.css'
+            'assets/css/vendor/bootstrap-responsive.readable.min.css'
+            'assets/css/vendor/font-awesome.min.css'
+            'assets/css/vendor/bootswatch.readable.css'
           ]
 
 

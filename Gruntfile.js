@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'assets/css/main.min.css': ['assets/css/vendor/bootstrap.css', 'assets/css/vendor/bootstrap-responsive.css']
+          'assets/css/main.min.css': ['assets/css/vendor/bootstrap.readable.min.css', 'assets/css/vendor/bootstrap-responsive.readable.min.css', 'assets/css/vendor/font-awesome.min.css', 'assets/css/vendor/bootswatch.readable.css']
         }
       }
     },
