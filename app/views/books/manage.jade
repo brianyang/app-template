@@ -1,0 +1,27 @@
+extends base
+
+block title
+  | Manage books
+
+block main
+  h2 Manage books
+
+  if message != ''
+    .alert.alert-notice
+      a.close(data-dismiss="alert", href="javascript:void(0)") x
+      | #{message}
+
+  table.table.table-striped
+    tr
+      th Title
+      th Created
+      th Actions
+    each book in books
+      tr
+        td
+          a(href='/books/#{book.id}/edit')=book.title
+        td= dateShortMon(book.createdAt)
+        td
+          a(href='/books/#{book.id}/edit') edit
+          |  |
+          a(href='/books/#{book.id}/destroy', onclick='return confirm("Are you sure you want to delete book #{book.title}?") ? true : false') delete

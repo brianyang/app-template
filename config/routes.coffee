@@ -26,6 +26,19 @@ module.exports = (app, passport, auth) ->
 
   app.param 'userId', users.user
 
+
+  # Book routes
+  books = require '../app/controllers/books'
+  app.get '/books', books.manage
+  app.get '/books/new', auth.requiresLogin, books.new
+  app.get '/books/:bookId', books.show
+  app.post '/books', auth.requiresLogin, books.create
+  app.get '/books/:bookId/edit', auth.requiresLogin, books.edit
+  app.put '/books/:bookId', auth.requiresLogin, books.update
+  app.get '/books/:bookId/destroy', auth.requiresLogin, books.destroy
+
+  app.param 'bookId', books.book
+
   # Article routes
   articles = require '../app/controllers/articles'
   app.get '/', articles.index

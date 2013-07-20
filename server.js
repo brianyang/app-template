@@ -41,5 +41,5 @@ require('./app/helpers/general')(app)
 // Start the app by listening on <port>
 var port = process.env.PORT || 3000
 http.createServer(app).listen(port, function(){
-  console.log('Form5 Express app running on port '+port)
+  console.log('battle hack app running on port '+port)
 });

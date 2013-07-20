@@ -1,27 +1,27 @@
 extends ../layout
 
 block title
-  | add article
+  | import book
 
 block content
 
-  each article in articles
+  each book in books
 
     .container
       .row
         .span12
-          h1=article.title
+          h1=book.title
       .row
         .span2
           small
             p
               b Published
               br
-              != dateShortMon(article.createdAt)
+              != dateShortMon(book.createdAt)
 
             p
               b Posted in
               br
-              | #{article.tags}
+              | #{book.tags}
         .span10
-          != marked(article.body)
+          != marked(book.body)
