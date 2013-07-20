@@ -31,8 +31,7 @@ module.exports = (grunt) ->
           'assets/js/application.js',
           'assets/js/vendor/jquery.min.js'
           'assets/js/vendor/bootstrap.js'
-          'assets/js/epub-app.min.js'
-          'assets/js/vendor/jquery.min.js'
+          'assets/js/vendor/bootstrap-responsive.js'
         ]
         dest: 'assets/js/<%= pkg.name %>.min.js'
 
