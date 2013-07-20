@@ -8,7 +8,10 @@ module.exports = (grunt) ->
     cssmin:
       combine:
         files:
-          'assets/css/main.min.css': ['assets/css/vendor/*']
+          'assets/css/main.min.css': [
+            'assets/css/vendor/bootstrap.css'
+            'assets/css/vendor/bootstrap-responsive.css'
+          ]
 
 
     uglify:
@@ -31,7 +34,6 @@ module.exports = (grunt) ->
           'assets/js/application.js',
           'assets/js/vendor/jquery.min.js'
           'assets/js/vendor/bootstrap.js'
-          'assets/js/vendor/bootstrap-responsive.js'
         ]
         dest: 'assets/js/<%= pkg.name %>.min.js'
 
