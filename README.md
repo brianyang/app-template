@@ -1,3 +1,5 @@
+### refactored gruntfile and dependency in ./app-template
+
 cloudbookcase
 
 # express, mongoose, coffee: structure

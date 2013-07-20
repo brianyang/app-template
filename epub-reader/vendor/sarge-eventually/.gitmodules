@@ -1,3 +1,0 @@
-[submodule "vendor/sarge"]
-	path = vendor/sarge
-	url = git://github.com/augustl/sarge.git

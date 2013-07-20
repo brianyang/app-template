@@ -1,6 +1,6 @@
 {
-  "name": "form5-appname",
-  "author": "Form5 <contact@form5.is>",
+  "name": "by-battle-hack",
+  "author": "brian <mail@brianyang.com>",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -30,6 +30,8 @@
   "devDependencies": {
     "grunt": "latest",
     "grunt-coffeelint": "latest",
-    "node-dev": "latest"
+    "node-dev": "latest",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.1"
   }
 }

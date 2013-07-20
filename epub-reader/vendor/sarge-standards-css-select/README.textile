@@ -1,3 +1,0 @@
-h2. Sarge standards css select
-
-Adds CSS selectors support to sarge, via the standards document.querySelectorAll.

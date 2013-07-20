@@ -20,30 +20,14 @@ html(lang='en')
     meta(property='og:description', content='cloudbookcase app..')
     meta(property='og:type', content='website')
     meta(property='og:url', content='//cloudbookcase.herokuapp.com')
-    meta(property='og:image', content='http://blog.getbootstrap.com/wp-content/themes/bootstrap-blog/img/bootstrap-blog-logo.png')
+    meta(property='og:image', content='')
     meta(property='og:site_name', content='cloudbookcase')
     meta(property='fb:admins', content='123456789')
 
 
-    != css('vendor/bootstrap/css/bootstrap')
-    != css('vendor/bootstrap/css/bootstrap-responsive')
+    != css('main.min')
     != css('style')
-    != js('vendor/lib/sarge.js')
-    != js('vendor/lib/sarge-eventually.js')
-    != js('vendor/lib/sarge-standards-css-select.js')
-    != js('vendor/sarge-fu.js')
-    != js('vendor/lib/js-unzip.js')
-    != js('vendor/lib/js-inflate.js')
-    != js('vendor/lib/js-epub.js')
-    != js('vendor/lib/copperplate.js')
-    != js('vendor/booktorious.js')
-    != js('vendor/booktorious/loading.js')
-    != js('vendor/booktorious/reader.js')
-    != js('vendor/booktorious/spine_entry.js')
-    != js('vendor/application.js')
-
-    link(rel='stylesheet', type='text/css', href='css/screen.css')
-
+    != js('by-battle-hack.min.js')
 
 
     // if lte IE 9
@@ -88,5 +72,3 @@ html(lang='en')
     .container
       block content
 
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-    != js('vendor/bootstrap')
