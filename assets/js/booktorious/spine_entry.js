@@ -19,7 +19,7 @@ booktorious.spineEntry = {
         // this.iframe.contentDocument.close();
 
         sarge(this.iframe.contentDocument).find("img").event("load", function () {
-            self.contentResizeIframe();
+            // self.contentResizeIframe();
         });
 
         var links = sarge(this.iframe.contentDocument).find("a");

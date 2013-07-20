@@ -30,7 +30,7 @@ sarge.api.append = function (element, html) {
     if (html instanceof sarge) {
         element.appendChild(html.element());
     } else if (typeof html === "string") {
-        element.innerHTML = element.innerHTML + html;
+        // element.innerHTML = element.innerHTML + html;
     } else {
         element.appendChild(html);
     }
